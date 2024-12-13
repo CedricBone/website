@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shelf of Stuff - Cedric Bone</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container nav-container">
+                <h1 class="logo"><a href="../index.html">Cedric Bone</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../publications.html">Publications</a></li>
+                        <li><a href="../projects.html" class="active">Projects</a></li>
+                        <!-- <li><a href="../other.html">Other</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="section project-detail">
+                <div class="container">
+                    <h2 style="font-size: 4em; font-weight: bold;">Shelf of Stuff</h2>
+
+                    <!-- Goal of the Project -->
+                    <section class="project-section">
+                        <h3>Goal of the Project</h3>
+                        <p>The goal of the Shelf of Stuff project was to create an interactive augmented reality (AR)
+                            shelf that allows users to explore and engage with virtual objects in a physical space. By
+                            blending AR technology with an LLM agent, the experience was designed to provide an
+                            immersive environment receive contextual feedback from an LLM agent.</p>
+                    </section>
+
+                    <!-- How It Was Built -->
+                    <section class="project-section">
+                        <h3>How It Was Built</h3>
+                        <p>The project was developed using Unity for AR development. Development was focused on creating
+                            smooth object manipulation and user
+                            interactions, allowing users to move, rotate, and engage with virtual items as if they were
+                            real-world objects.</p>
+                        <p>To create the agent interaction, the system uses the OpenAI API for LLM responses. Whisper is
+                            used for speech
+                            transcription, enabling voice interactions with the AI. The AR experience runs on the Meta
+                            Quest 3. API calls were handled directly on the headset
+                            to improve responsiveness and reduce latency.</p>
+                    </section>
+
+                    <!-- Results -->
+                    <section class="project-section">
+                        <h3>Results</h3>
+                        <p>The final product enables users to interact with a shelf of objects in augmented reality.
+                            Users can view 3D objects, manipulate them, and ask questions to an AI agent, receiving
+                            context-aware responses. The inclusion of interactive AI allows for a more dynamic and
+                            personalized experience. Performance was optimized by using low-poly 3D models, ensuring
+                            smooth frame rates during AR interactions.</p>
+
+                        <video controls src="../videos/shelf_of_stuff.mp4"></video>
+                    </section>
+
+                    <!-- What You Learned -->
+                    <section class="project-section">
+                        <h3>What I Learned</h3>
+                        <p>Throughout this project, I developed a stronger understanding of key Unity concepts, such as
+                            configuring rigid body parameters, managing Asset Store versions, and optimizing for
+                            different AR platforms. I learned how to improve performance by using low-poly models, which
+                            reduced memory usage and kept frame rates smooth. This was critical in ensuring a seamless
+                            user experience on the Meta Quest 3 headset.</p>
+                        <p>Additionally, I gained experience with the Meta XR SDK, learning how to effectively integrate
+                            the headset’s unique hardware capabilities. I also learned how to make API calls directly
+                            from the headset, allowing for faster data retrieval and reduced network latency. One of the
+                            most valuable takeaways from this project was understanding that the way developers
+                            experience a demo is often different from how end-users experience it, leading to a greater
+                            emphasis on user testing and design iteration.</p>
+                    </section>
+
+                    <!-- What You'd Do Next -->
+                    <section class="project-section">
+                        <h3>Future Work</h3>
+                        <p>I plan to increase the resolution of the 3D models used in the project to
+                            create more visually compelling experiences. Additionally, I aim to introduce voice
+                            integration for the agent, allowing users to ask questions and issue commands using natural
+                            language. Another key improvement would be to give the AI agent "vision" in the AR space,
+                            allowing it to understand the user’s environment and provide more contextually relevant
+                            responses. These changes would create a more immersive, engaging, and intuitive experience
+                            for users.</p>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-content">
+                <p>© 2024 Cedric Bone.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

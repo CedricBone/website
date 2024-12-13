@@ -1,0 +1,322 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #f7f7f7;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+b {
+    color: #280dc0;
+    text-decoration: none;
+}
+
+c {
+    color: #000001;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: #3B5FCC;
+    /* Blue background for header */
+    color: #fff;
+    /* Text color for the logo */
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.6em;
+    color: #fff;
+    /* Ensures the logo is white */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Flex layout to align navigation items horizontally */
+}
+
+nav li {
+    margin-left: 20px;
+    /* Space between menu items */
+}
+
+nav a {
+    font-weight: 600;
+    /* Make the links bold for better visibility */
+    color: #ffffff;
+    /* Explicitly set the link color to white */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 1.1em;
+    /* Make it a bit larger for better readability */
+    transition: color 0.3s;
+    /* Smooth transition on hover */
+}
+
+nav a:hover {
+    color: #E0E0E0;
+    /* Lighter gray color when hovered */
+}
+
+nav a.active {
+    text-decoration: underline;
+    /* To emphasize the current page */
+}
+
+.hero {
+    background: #e9eeff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    margin-top: 0;
+    font-size: 2.4em;
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #3B5FCC;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #2c4ea7;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    /* Center all text and elements within sections */
+}
+
+.section-alt {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #3B5FCC;
+    margin: 20px auto 0;
+}
+
+.section p,
+.section li {
+    font-size: 1.05em;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Publications list - if needed */
+.pub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.pub-list li {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pub-list h4 {
+    margin-top: 0;
+}
+
+.pub-list p {
+    margin: 5px 0;
+}
+
+/* Projects grid - if needed */
+.project-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 40px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.project-card h4 {
+    margin-top: 0;
+}
+
+.project-card p {
+    font-size: 0.95em;
+}
+
+.project-link {
+    font-weight: 600;
+}
+
+/* Documents section styling */
+.documents-section .document-links {
+    display: inline-flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* --- Project Page Styles --- */
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.project-card a.btn {
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    background: #3B5FCC;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.project-card a.btn:hover {
+    background: #2c4ea7;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+        margin: 10px 0 0 0;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+}
