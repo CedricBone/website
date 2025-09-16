@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Synchrony in Agent Interactions across Display Modalities - Cedric Bone</title>
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="container nav-container">
+                <h1 class="logo"><a href="../index.html">Cedric Bone</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../publications.html">Publications</a></li>
+                        <li><a href="../projects.html" class="active">Projects</a></li>
+                        <!-- <li><a href="../other.html">Other</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="section project-detail">
+                <div class="container">
+                    <h2 style="font-size: 4em; font-weight: bold;">Synchrony in Agent Interactions across Display
+                        Modalities</h2>
+
+                    <img src="../images/in_headset.png" alt="Synchrony study comparing 2D and AR agent interactions"
+                        class="project-detail-img" style="max-width: clamp(300px, 22vw, 380px);" />
+
+                    <!-- Goal of the Project -->
+                    <section class="project-section">
+                        <h3>Goal of the Project</h3>
+                        <p>
+                            As AI agents become embedded in everyday decision-making, it is crucial to understand how
+                            the <strong>display modality</strong> ( traditional 2D interface versus augmented reality
+                            (AR) ) influences <strong>linguistic synchrony</strong>, <strong>engagement</strong>, and
+                            <strong>fatigue</strong> during collaborative tasks. This project measures those outcomes
+                            and explores whether <em>model size</em> (smaller vs. larger LLMs) modulates synchrony in
+                            human–AI teamwork, with the aim of informing interface and agent design for more effective,
+                            lower‑fatigue collaboration.
+                        </p>
+                    </section>
+
+                    <!-- How It Was Built -->
+                    <section class="project-section">
+                        <h3>How It Was Built</h3>
+                        <p>
+                            The study uses a <strong>1×2 within‑subjects</strong> design: each participant collaborates
+                            with the same AI agent in both <em>2D</em> and <em>AR</em> conditions. For the AR condition
+                            had a Unity application on a <em>Meta Quest 3</em> headset that renders the agent and
+                            a shared spatial workspace. The 2D condition uses a web interface mirroring the same
+                            task flow and timing. Speech is captured with an <em>external Tascam microphone</em> and
+                            transcribed with ASR. We log time‑stamped transcripts, interaction events (turns,
+                            latencies), task duration, and final decisions. Post‑block/condition questionnaires capture
+                            <strong>Perceived Synchrony</strong>, <strong>Engagement</strong>, and
+                            <strong>Fatigue</strong>.
+                        </p>
+
+                        <figure>
+                            <img src="../images/project3_methods.png"
+                                alt="Methods diagram: pipeline from audio & UI events to ASR, transcript analysis, questionnaires, and outcomes"
+                                class="project-detail-img" />
+                            <figcaption>Methods overview: modality setup → audio & UI logging → ASR → synchrony metrics
+                                → questionnaires & outcomes.</figcaption>
+                        </figure>
+                    </section>
+
+                    <!-- Study Design -->
+                    <section class="project-section">
+                        <h3>Study Design</h3>
+                        <p>
+                            <strong>Design.</strong> A 1×2 within‑subjects comparison of a 2D interface and an AR
+                            environment. Each modality consists of two short blocks with one question per block.
+                            Discussions are capped at four minutes to standardize time pressure and reduce fatigue.
+                        </p>
+                        <p>
+                            <strong>Primary measures.</strong> Perceived Synchrony, Engagement, and Fatigue are
+                            collected via brief questionnaires administered after blocks and at the end of each
+                            modality.
+                        </p>
+                        <p>
+                            <strong>Behavioral measures.</strong> Task duration and final decision(s) are logged to
+                            capture efficiency and outcomes.
+                        </p>
+                        <p>
+                            <strong>Language and speech measures.</strong> Audio recordings and ASR transcripts enable
+                            analysis of linguistic alignment and timing.
+                        </p>
+                        <p>
+                            <strong>Synchrony features (planned).</strong> Lexical and syntactic alignment,
+                            function‑word coupling, turn‑taking gaps, and response latencies are computed from
+                            transcripts and timestamps. Prosodic convergence is explored when audio quality permits.
+                        </p>
+                    </section>
+
+                    <!-- Task prompts -->
+                    <section class="project-section">
+                        <h3>Task Prompts (Randomized)</h3>
+                        <p>
+                            <strong>Desert island.</strong> Choose three items that would be most useful on a desert
+                            island and explain why.
+                        </p>
+                        <p>
+                            <strong>Combine two objects.</strong> Select any two objects from the shelf and describe an
+                            innovative way to use them together.
+                        </p>
+                        <p>
+                            <strong>Invent an artifact.</strong> Pick any two items, invent a new artifact, and describe
+                            its function.
+                        </p>
+                        <p>
+                            <strong>Message to aliens.</strong> Select three items to send into space to represent
+                            humanity and justify your choices.
+                        </p>
+                        <p>
+                            <strong>Storm preparation.</strong> Assemble an emergency kit from shelf items for a severe
+                            storm and explain your reasoning.
+                        </p>
+                        <p>
+                            <strong>Science experiment.</strong> Develop a student‑friendly experiment using any two
+                            items and outline its learning objectives.
+                        </p>
+                        <p>
+                            <strong>Design a game.</strong> Create a game using items from the shelf and explain the
+                            rules and objectives.
+                        </p>
+                        <p><em>One question is presented per block; each discussion is capped at four minutes.</em></p>
+                    </section>
+
+                    <!-- Equipment -->
+                    <section class="project-section">
+                        <h3>Equipment</h3>
+                        <figure>
+                            <img src="../images/project3_equipment_tascam.png" alt="Tascam external microphone"
+                                class="project-detail-img" style="max-width: clamp(300px, 22vw, 380px);" />
+                            <figcaption>External Tascam microphone for higher‑quality speech capture.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="../images/project3_equipment_meta_quest3.png" alt="Meta Quest 3 headset"
+                                class="project-detail-img" style="max-width: clamp(300px, 22vw, 380px);" />
+                            <figcaption>Meta Quest 3 headset for the AR modality.</figcaption>
+                        </figure>
+                    </section>
+
+                    <!-- Interfaces -->
+                    <section class="project-section">
+                        <h3>Interfaces: 2D vs. AR</h3>
+                        <figure>
+                            <img src="../images/project3_interface_2d_vs_ar.png"
+                                alt="Side‑by‑side view of the 2D desktop interface and the AR interface"
+                                class="project-detail-img" />
+                            <figcaption>Comparison of the 2D desktop interface and the AR interface used in the study.
+                            </figcaption>
+                        </figure>
+                    </section>
+
+                    <!-- Data & Analysis -->
+                    <section class="project-section">
+                        <h3>Data Collected & Planned Analysis</h3>
+                        <p>
+                            <strong>Data.</strong> We collect speech audio, ASR transcripts, task duration, and final
+                            decisions, alongside questionnaire responses for Perceived Synchrony, Engagement, and
+                            Fatigue.
+                        </p>
+                        <p>
+                            <strong>Analyses.</strong> Within‑subject contrasts compare the 2D and AR modalities.
+                            Linguistic alignment metrics (such as lexical overlap and function‑word alignment) and
+                            temporal coupling (turn‑taking gaps and response latencies) are computed from transcripts
+                            and timestamps. Questionnaire differences are analyzed and related to behavioral outcomes.
+                            Exploratory analyses examine moderation by LLM size.
+                        </p>
+                    </section>
+
+                    <!-- Results (blank by request) -->
+                    <section class="project-section">
+                        <h3>Results</h3>
+                        IDK
+                        <!-- Intentionally left blank for now. -->
+                    </section>
+
+                </div>
+            </section>
+        </main>
+
+        <footer></footer>
+    </body>
+
+</html>

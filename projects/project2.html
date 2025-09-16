@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AR Robotic Arm Control - Cedric Bone</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container nav-container">
+                <h1 class="logo"><a href="../index.html">Cedric Bone</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../publications.html">Publications</a></li>
+                        <li><a href="../projects.html" class="active">Projects</a></li>
+                        <!-- <li><a href="../other.html">Other</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="section project-detail">
+                <div class="container">
+                    <h2 style="font-size: 4em; font-weight: bold;">AR Robotic Arm Control</h2>
+                    <img src="../images/project2_thumbnail.png" alt="AR Robot Arm Control Project"
+                        class="project-detail-img">
+
+                    <!-- Goal of the Project -->
+                    <section class="project-section">
+                        <h3>Goal of the Project</h3>
+                        <p>This project aimed to simplify controlling a robotic arm in an augmented reality (AR)
+                            environment using large language models (LLMs). By integrating natural language inputs,
+                            users can issue voice commands that the system interprets and converts into structured
+                            actions for a virtual robotic arm, making interaction more intuitive and accessible.</p>
+                    </section>
+
+                    <section class="project-section">
+                        <h3>How It Was Built</h3>
+                        <p>The system was developed in Unity and deployed on a Meta Quest 3 headset. Voice
+                            commands were captured using the built-in microphones and processed with Whisper API for
+                            transcription. The transcribed text was then sent to an LLM (via the OpenAI API), which
+                            interpreted the command and returned structured instructions.</p>
+                        <p>An inverse kinematics (IK) solver guided the robotic arm’s movements, allowing it to pick and
+                            place virtual objects. Users could also choose to control the arm manually through an
+                            AR interface.
+                        </p>
+                    </section>
+
+                    <section class="project-section">
+                        <h3>Results</h3>
+                        <p>The result was a virtual robotic arm that responded to natural voice
+                            commands. Users could say things like, “Move the orange block to the yellow platform,” and
+                            the virtual arm would interpret and execute the action.</p>
+
+                        <video controls src="../videos/voice_contol.mp4"></video>
+
+                        <video controls src="../videos/manual_control.mp4"></video>
+                    </section>
+
+                    <section class="project-section">
+                        <h3>What I Learned</h3>
+                        <p>Developing this project deepened my understanding of integrating LLMs with real-time AR
+                            systems. I learned how to streamline the pipeline from voice input through transcription,
+                            language interpretation, and final action execution. Additionally, I gained insights into
+                            performance optimizations necessary for AR applications, such as minimizing latency between
+                            voice input and robotic response, and ensuring the IK computations remained smooth under
+                            changing conditions.</p>
+
+                    </section>
+
+                    <!-- What You'd Do Next -->
+                    <section class="project-section">
+                        <h3>Future Work</h3>
+                        <p>Future improvements could include integrating a computer vision module, allowing the system
+                            to dynamically identify and localize real-world objects for the robotic arm to interact
+                            with. Additionally, I’d explore reducing reliance on cloud-based APIs for transcription and
+                            LLM processing by deploying lightweight, on-device models to improve responsiveness.
+                            Enhancing the arm’s action repertoire, adding collision avoidance, and implementing
+                            multi-step reasoning within the LLM pipeline would further refine the user experience.</p>
+                    </section>
+
+                    <h3>Project Paper</h3>
+                    <a href="../docs/LLMs_for_Robotic_Manipulation_in_AR_Environments.pdf" class="btn" download>Download
+                        the Paper</a>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+    </body>
+
+</html>

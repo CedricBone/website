@@ -320,3 +320,23 @@ footer {
         text-align: center;
     }
 }
+
+
+
+
+
+
+.download-link,
+.publisher-link {
+    font-weight: bold;
+    color: #007BFF;
+    /* Change to your preferred color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.download-link:hover,
+.publisher-link:hover {
+    text-decoration: underline;
+    /* Optional hover effect */
+}
